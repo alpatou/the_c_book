@@ -2,13 +2,14 @@
 
 int main() {
 
-  long nc = 0; // we use long, allthoug it is an int, because in some machines
-               // int is smaller.
+  double nc = 0; // we use long, allthoug it is an int, because in some machines
+                 // int is smaller.
   // we can also use double (double precision float)
 
-  while (getchar() != EOF) {
-    ++nc;
-    printf("%ld\n", nc);
+  for (nc = 0; getchar() != EOF; ++nc) {
+
+    printf("%.0f\n", nc);
   }
-  return 0;
+  // empty body, null statement
+  printf("%.0f\n", nc);
 }
